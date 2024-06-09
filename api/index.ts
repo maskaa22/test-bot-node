@@ -17,9 +17,7 @@ app.use(cors({origin: true}));
 const token = '7192604167:AAEqdRty9vz7RToy1XVSGrHKEbE6t5W9lo0';
 const webAppUrl = 'https://telegram-bot-picture-react.vercel.app/';
 
-const bot = new TelegramBot(token, { polling: {
-  interval: 1000
-} });
+const bot = new TelegramBot(token, { polling: true });
 
 bot.on('message', async (msg) => {
 
